@@ -155,7 +155,23 @@ html {
     border-color: #C6BAB5;
    
   }
-  
+  /*-------------- sidenav --------- */
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 0;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
   .sidenav {
     height: 100%; 
     width: 250px; 
@@ -191,7 +207,14 @@ html {
   .sidenav a:hover {
     color: #B59C93;
   }
-  
+  .openbtn {
+    display: block;
+  }
+  .sidenav .closebtn {
+    display: block;
+  }
+
+  /* -------- */
   header {
     font-family: Playfair Display;
     font-size: 35px;
@@ -332,3 +355,19 @@ img {
       margin: 0;
   }
  
+
+
+  .sidebar {
+    width: 180px;
+    }
+    
+    @media (min-width: 768px) {
+    .main {
+    padding-right: 40px;
+    padding-left: 220px; /* 180 + 40 */
+    }
+    }
+
+    
+
+
