@@ -1,154 +1,5 @@
 
 
-/* ==================================
-   Responsive Styling and Layout
-   ==================================  */
-
-/* ================= Use Border Box model ================= */
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-color: white;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-/* ================= Basic Responsive Images and Video ================= */
-img,video{
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
-
-/* ================= Responsive Embedded Video ================= */
-/* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
-/* More info here: https://codepen.io/profstein/pen/mArLRj */
-.videoWrapper {
-    position: relative;
-    padding-top: 25px;
-    height: 0;
-  clear:both;
-  outline:1px solid red;
-}
-
-.videoWrapper.ratio-16-9{
-    padding-bottom: 56.25%; /* 16:9 */
-}
-
-.videoWrapper.ratio-4-3{
-    padding-bottom: 75%; /* 4:3 */
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-h3 {
-  font-family:  Raleway;
-  font-size: 21px;
-
-}
-
-body {
-
-font-family: Raleway;
-color: black;
-margin: 0;
-padding: 0;
-}
-
-
-a {
-text-decoration: none;
-color: inherit
-}
-
-a:hover {
-color: #B59C93;
-}
-
-.highlight-inline {
-display: inline;
-background-color: black;
-color: #C6BAB5;
-padding: 2px;
-line-height: 1.62em;
-/* box-shadow: 10px 0 0 black, -10px 0 0 black;*/
-
-box-decoration-break: clone;
-}
-
-#header {
-  position: fixed;
-width: 200px;
-background: #C6BAB5;
-top: 0;
-bottom: 0;
-left: 0;
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
-color: white;
-font-size: 12px;
-}
-
-
-
-#header ul {
-list-style-type: none;
-width: inherit;
-
-}
-
-#header ul li {
-padding: 0 12px 3px 0;
-white-space: nowrap;
-font-size: 0.98em;
-font-weight: 700;
-text-align: right;
-
-}
-
-
-
-
-
-#content {
-font-size: 1.20em;
-font-weight: 300;
-background: white;
-margin-left: 126px;
-padding-left: 0em;
-}
-
-
-
-
-
-@media screen and (max-width: 640px) {
-#header {
-  height: 125px;
-  display: table;
-  width: 100%;
-  position: relative;
-}
-#header ul li {
-  display: inline;
-}
-#content  {
-  margin-left: 0;
-  margin-top: 125px;
-
-}
-}
-
-
     /* ================= containters ================= */
 
     /* Base Styles */
@@ -352,3 +203,152 @@ img {
      ==================================  */
   
   
+
+
+/* ==================================
+   Responsive Styling and Layout
+   ==================================  */
+
+/* ================= Use Border Box model ================= */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+color: white;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* ================= Basic Responsive Images and Video ================= */
+img,video{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ================= Responsive Embedded Video ================= */
+/* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
+/* More info here: https://codepen.io/profstein/pen/mArLRj */
+.videoWrapper {
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+  clear:both;
+  outline:1px solid red;
+}
+
+.videoWrapper.ratio-16-9{
+    padding-bottom: 56.25%; /* 16:9 */
+}
+
+.videoWrapper.ratio-4-3{
+    padding-bottom: 75%; /* 4:3 */
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+  font-family:  Raleway;
+  font-size: 21px;
+
+}
+
+body {
+
+font-family: Raleway;
+color: black;
+margin: 0;
+padding: 0;
+}
+
+
+a {
+text-decoration: none;
+color: inherit
+}
+
+a:hover {
+color: #B59C93;
+}
+
+.highlight-inline {
+display: inline;
+background-color: black;
+color: #C6BAB5;
+padding: 2px;
+line-height: 1.62em;
+/* box-shadow: 10px 0 0 black, -10px 0 0 black;*/
+
+box-decoration-break: clone;
+}
+
+#header {
+  position: fixed;
+width: 200px;
+background: #C6BAB5;
+top: 0;
+bottom: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+color: white;
+font-size: 12px;
+}
+
+
+
+#header ul {
+list-style-type: none;
+width: inherit;
+
+}
+
+#header ul li {
+padding: 0 12px 3px 0;
+white-space: nowrap;
+font-size: 0.98em;
+font-weight: 700;
+text-align: right;
+
+}
+
+
+
+
+
+#content {
+font-size: 1.20em;
+font-weight: 300;
+background: white;
+margin-left: 126px;
+padding-left: 0em;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+#header {
+  height: 125px;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+#header ul li {
+  display: inline;
+}
+#content  {
+  margin-left: 0;
+  margin-top: 125px;
+
+}
+}
