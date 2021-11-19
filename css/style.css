@@ -330,6 +330,8 @@ font-weight: 300;
 background: white;
 margin-left: 200px;
 padding-left: 0em;
+text-align: center;
+width: 85%;
 }
 
 
@@ -349,6 +351,7 @@ padding-left: 0em;
 #content  {
   margin-left: 0;
   margin-top: 125px;
-
+  text-align: center;
+  width: 100%;
 }
 }
